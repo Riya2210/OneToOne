@@ -2,25 +2,20 @@ package com.alliance.model;
 
 import java.io.Serializable;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
+/**
+ * @author Riya
+ *
+ */
 @Entity
 @Table(name = "users", catalog = "mapping")
 public class Users implements Serializable {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -9090064049121800081L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

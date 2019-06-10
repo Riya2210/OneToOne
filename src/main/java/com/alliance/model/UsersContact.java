@@ -19,6 +19,10 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Size;
 
+/**
+ * @author Riya
+ *
+ */
 @Entity
 @Table(name = "users_contact", catalog = "mapping")
 public class UsersContact implements Serializable {
